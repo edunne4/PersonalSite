@@ -1,0 +1,213 @@
+/* GLOBAL */
+
+body {
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	background-color: #fffff7;
+	color: #323232;
+	font-size:25px;
+}
+
+.headerEmphasis {
+	color: #d55b71;
+}
+
+#comingSoonText {
+	margin-top:0px;
+}
+
+#container {
+	max-width:900;
+	margin:20px;
+}
+
+#widthChecker {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+/* HEADER */
+
+#logo {
+	width:200px;
+	border-radius:45px;
+}
+
+#header {
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	margin-bottom:20px;
+}
+
+#subtitle {
+	margin-top:-25px;
+	color: #6d6d6d;
+}
+
+/* SUMMARY */
+
+#summary {
+	max-width:1000px;
+}
+
+#downloadBadge {
+	width:200px;
+	margin-bottom:40px;
+}
+
+.legalText {
+	text-align: left;
+}
+
+/* FOOTER */
+
+#footerLinks {
+	display: flex;
+	flex-direction:row;
+	align-items:center;
+	justify-content:center;
+	margin-top:-25px;
+}
+
+.footerLink {
+	padding: 0px 10px 0px 10px;
+}
+
+/* FEATURES */
+
+.featureDescriptionSubtitle {
+	margin-top:-25px;
+}
+
+.featureDisplayLeft {
+	margin-top:-50px;
+	display:flex;
+	justify-content: left;
+	align-items: center;
+	height:600px;
+}
+
+.featureDisplayRight {
+	margin-top:-50px;
+	display:flex;
+	justify-content: right;
+	align-items: center;
+	height:600px;
+}
+
+.featureDescriptionRight {
+	display: flex;
+	justify-content: center;
+	text-align:left;
+	flex-direction:column;
+	height: 100%;
+	margin-left:10px;
+	color: #6d6d6d;
+}
+
+.featureDescriptionLeft {
+	display: flex;
+	justify-content: center;
+	text-align:right;
+	flex-direction:column;
+	height: 100%;
+	margin-right:10px;
+	color: #6d6d6d;
+}
+
+.featurePreview {
+	height: 100%;
+}
+
+.screenshot {
+	height:100%;
+}
+
+.featureTitle {
+	color: #323232;
+}
+
+/* LINKS */
+
+a {
+	color: #d55b71;
+}
+
+a:hover {
+	color:#85d3dc;
+}
+
+/* RESIZE */
+
+@media screen and (orientation: portrait), screen and (max-width:1550) {
+	body {
+		font-size:5vw;
+	}
+	
+	#widthChecker {
+		display: relative;
+		width:100%;
+	}
+	
+	#header {
+		flex-direction:column;
+	}
+	
+	#headerTitles {
+		text-align:center;
+	}
+	
+	.featureDisplay {
+		height:auto;
+	}
+	
+	.screenshot {
+		width:100%;
+		margin-top:-100px;
+		height:auto;
+	}
+	
+	.screenshot:first-child {
+		margin-top:-50px;
+	}
+	
+	.featureDisplayLeft {
+		margin-top:0px;
+		flex-direction:column-reverse;
+		height:auto;
+	}
+	
+	.featureDescriptionLeft, .featureDescriptionRight {
+		text-align:center;
+		margin-top:-30px;
+	}
+	
+	.featureDisplayRight {
+		margin-top:0px;
+		flex-direction:column;
+		height:auto;
+	}
+	
+	#downloadBadge {
+		width:50%;
+		margin-bottom:0px;
+	}
+}
+
+@media (max-width:500px) {
+	
+	#footerLinks {
+		flex-direction:column;
+	}
+	
+	.footerLink {
+		margin-top:-5px;
+	}
+	
+	#firstLink {
+		margin-top:10px;
+	}
+}
